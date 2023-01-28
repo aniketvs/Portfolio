@@ -40,7 +40,7 @@ app.post('/contact',async(req,resp)=>{
     });
 
 
-    var PORT = process.env.PORT;
+    var PORT = process.env.PORT || 30005;
  
 app.listen(PORT, function(err){
     if (err) console.log("Error in server setup")
